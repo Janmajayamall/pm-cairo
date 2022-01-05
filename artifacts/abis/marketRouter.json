@@ -1,0 +1,150 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_c_token_address",
+                "type": "felt"
+            },
+            {
+                "name": "_markets_address",
+                "type": "felt"
+            },
+            {
+                "name": "_owner",
+                "type": "felt"
+            }
+        ],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "oracle_address",
+                "type": "felt"
+            },
+            {
+                "name": "funding_amount",
+                "type": "Uint256"
+            }
+        ],
+        "name": "create_new_market",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount_out_token_0_min",
+                "type": "Uint256"
+            },
+            {
+                "name": "amount_out_token_1_min",
+                "type": "Uint256"
+            },
+            {
+                "name": "fixed_token_index",
+                "type": "felt"
+            },
+            {
+                "name": "amount_in_c",
+                "type": "Uint256"
+            }
+        ],
+        "name": "buy_min_tokens_for_exact_c_tokens",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount_in_token_0",
+                "type": "Uint256"
+            },
+            {
+                "name": "amount_in_token_1",
+                "type": "Uint256"
+            },
+            {
+                "name": "fixed_token_index",
+                "type": "felt"
+            },
+            {
+                "name": "amount_out_c_min",
+                "type": "Uint256"
+            }
+        ],
+        "name": "sell_exact_tokens_for_min_c_tokens",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount_in_token_0",
+                "type": "Uint256"
+            },
+            {
+                "name": "amount_in_token_1",
+                "type": "Uint256"
+            }
+        ],
+        "name": "redeem_win",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    }
+]

@@ -1,0 +1,291 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "token_id",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "name": "balance_of",
+        "outputs": [
+            {
+                "name": "balance",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "operator",
+                "type": "felt"
+            }
+        ],
+        "name": "is_approval_for_all",
+        "outputs": [
+            {
+                "name": "is_approved",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            }
+        ],
+        "name": "outcome_token_ids",
+        "outputs": [
+            {
+                "name": "token_0_id",
+                "type": "felt"
+            },
+            {
+                "name": "token_1_id",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            }
+        ],
+        "name": "get_outcome_reserves",
+        "outputs": [
+            {
+                "name": "reserve_0",
+                "type": "Uint256"
+            },
+            {
+                "name": "reserve_1",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "creator_address",
+                "type": "felt"
+            },
+            {
+                "name": "oracle_address",
+                "type": "felt"
+            }
+        ],
+        "name": "create_and_fund_market",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount_out_0",
+                "type": "Uint256"
+            },
+            {
+                "name": "amount_out_1",
+                "type": "Uint256"
+            },
+            {
+                "name": "to_address",
+                "type": "felt"
+            }
+        ],
+        "name": "buy",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount_out_c",
+                "type": "Uint256"
+            },
+            {
+                "name": "to_address",
+                "type": "felt"
+            }
+        ],
+        "name": "sell",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "outcome",
+                "type": "felt"
+            }
+        ],
+        "name": "set_outcome",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "market_id",
+                "type": "felt"
+            },
+            {
+                "name": "to_address",
+                "type": "felt"
+            }
+        ],
+        "name": "redeem_win",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "recipient",
+                "type": "felt"
+            },
+            {
+                "name": "token_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount",
+                "type": "Uint256"
+            }
+        ],
+        "name": "transfer",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "sender",
+                "type": "felt"
+            },
+            {
+                "name": "recipient",
+                "type": "felt"
+            },
+            {
+                "name": "token_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount",
+                "type": "Uint256"
+            }
+        ],
+        "name": "transfer_from",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "operator",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            }
+        ],
+        "name": "set_approval_for_all",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    }
+]
